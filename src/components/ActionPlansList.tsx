@@ -615,7 +615,7 @@ export default function ActionPlansList() {
                     paddingTop: 12,
                     gap: 8,
                   }}>
-                    <Button variant="secondary" size="md" style={{ width: "100%", height: 24, fontSize: 12, fontWeight: 600 }}>Create New Company Template</Button>
+                    <Button variant="secondary" size="md" style={{ width: "100%", height: 24, fontSize: 12, fontWeight: 600 }} onClick={() => { window.location.href = "/company-templates"; }}>Create New Company Template</Button>
                     <Button variant="secondary" size="md" style={{ width: "100%", height: 24, fontSize: 12, fontWeight: 600 }}>Create New Project Template</Button>
                     <Button variant="secondary" size="md" style={{ width: "100%", height: 24, fontSize: 12, fontWeight: 600 }}>Create New Plan</Button>
                   </Menu.Footer>

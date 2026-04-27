@@ -28,3 +28,19 @@ table th {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
+
+.import-file-token {
+  height: 24px !important;
+  min-height: 24px !important;
+  max-height: 24px !important;
+  box-sizing: border-box !important;
+}
+
+.import-file-token button {
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  padding: 0 !important;
+  margin-right: 4px !important;
+}
