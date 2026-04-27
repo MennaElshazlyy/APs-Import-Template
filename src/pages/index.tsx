@@ -1,10 +1,10 @@
-import dynamic from "next/dynamic";
-
-const CompanyTemplates = dynamic(() => import("@/components/CompanyTemplates"), {
-  ssr: false,
-  loading: () => <p style={{ padding: 40 }}>Loading…</p>,
-});
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 export default function Home() {
-  return <CompanyTemplates />;
+  const router = useRouter();
+  useEffect(() => {
+    router.replace("/company-templates");
+  }, []);
+  return null;
 }
