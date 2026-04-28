@@ -1,10 +1,10 @@
 import dynamic from "next/dynamic";
 
-const CompanyTemplates = dynamic(() => import("@/components/CompanyTemplates"), {
+const ActionPlansList = dynamic(() => import("@/components/ActionPlansList"), {
   ssr: false,
   loading: () => <p style={{ padding: 40 }}>Loading…</p>,
 });
 
 export default function Home() {
-  return <CompanyTemplates />;
+  return <ActionPlansList />;
 }
